@@ -1,29 +1,40 @@
-#include <iostream>
+#include<bits/stdc++.h>
 using namespace std;
 
+bool binary_search(vector<int> &arr, int n , int element)
+{
+  int low = 0;
+  int high = n-1;
+  while (low<=high)
+  {
+    int mid = (low+high)/2;
+    if(arr[mid] == elemnt)
+    {
+       return true;
+    }
+     
+    else if (arr[mid]> element)
+      
+  }
+
+  
+  
+}
 int main()
 {
-    int n;
-    cout << "enter n : ";
-    cin >> n;
-    int row = 1;
-    // int value = 1;
-    // char ch = 'A';
-    while (row <= n)
-    {
-        int column = 1;
-        
-        while (column <= n)
-        {
-            char ch = ('A'+ column + row - n +(n-1));
-            
-            cout << ch<<" " ;
-            ch += 1;
-            column += 1;
-        }
-
-        cout << endl;
-        row += 1;
-    }
-    return 0;
+  int n ;
+  cout<<"Enter size ;";
+  cin>>n;
+  vector<int> arr(n);
+  cout<<"Enter the array element ; ";
+  for (int i = 0; i < n; i++)
+  {
+    cin>>arr[i];
+  }
+  int element;
+  cout<<"enter element : ";
+  cin>>element;
+  int ans = binary_search(arr,n,element);
+  cout<<"Element found "<<ans<<endl;
+  return 0;
 }
