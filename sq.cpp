@@ -8,12 +8,12 @@ bool binary_search(vector<int> &arr, int n , int element)
   while (low<=high)
   {
     int mid = (low+high)/2;
-    if(arr[mid] == elemnt)
+    if(arr[mid] == element)
     {
        return true;
     }
      
-    else if (arr[mid]> element)
+    else if (arr[mid]> element);
       
   }
 
